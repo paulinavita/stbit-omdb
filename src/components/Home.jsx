@@ -23,7 +23,7 @@ export default function Home() {
   
   // Methods
   const isMinSearchLength = searchTerm.length <= 2
-  const isEmptyState = Error === '' && isMinSearchLength
+  const isEmptyState = errorCode.Error === '' && isMinSearchLength
   const handleDetailClick = (id) => {
     history.push(`details/${id}`);
   }
